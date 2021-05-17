@@ -1,12 +1,10 @@
-```
-/*
-######## Strategy in TypeScript ###########
+## Strategy Design Pattern
+
 Strategy is a behavioral design pattern that turns a set of behaviors into objects and makes them interchangeable inside original context object.
 
 It is a behavioural design pattern that allows encapsulation of alternative algorithms for a particular task. It defines a family of algorithms and encapsulates them in such a way that they are interchangeable at runtime without client interference or knowledge.
 In the example below, we create a class Commute for encapsulating all the possible strategies for commuting to work. Then, we define three strategies namely Bus, PersonalCar, and Taxi. Using this pattern we can swap the implementation to use for the travel method of the Commute object at runtime.
-*/
-```
+
 
 ```ts
 /**
@@ -94,7 +92,6 @@ context.doSomeBusinessLogic();
 ```
 
 ```
-/*
 Client: Strategy is set to normal sorting.
 Context: Sorting data using the strategy (not sure how it'll do it)
 a,b,c,d,e
@@ -102,6 +99,4 @@ a,b,c,d,e
 Client: Strategy is set to reverse sorting.
 Context: Sorting data using the strategy (not sure how it'll do it)
 e,d,c,b,a
-
-*/
 ```
